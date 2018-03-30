@@ -1,0 +1,19 @@
+function bool = ISDiv(img)
+
+[w,h,~]=size(img);
+  x1 = 1;
+  x2 = w;
+  y1 = h;
+  y2 = 1;
+  
+  slope = (y1-y2)./(x2-x1);
+  black=0;
+  for i=1:w
+      for j=1:h
+          if(((y1-j)./(i-x1))>=(slope-0.15)&&((y1-j)./(i-x1))<=(slope+0.15))
+          count
+          
+          end
+      end
+  end
+end
